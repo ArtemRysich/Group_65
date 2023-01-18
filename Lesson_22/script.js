@@ -83,31 +83,46 @@
 //     })
 
 //     console.log(responses);
-    // const data = await Promise.race(responses)
-    // console.log(data);
+//     const data = await Promise.race(responses)
+//     console.log(data);
+// }
+// boo()
 
 
 
 
 
-
-    // return await Promise.all(responses)
-
-
-    const data = await Promise.allSettled(responses)
-    // const resp = data.filter(item => {
-    //     if (item.status === 'fulfilled') {
-    //         return item.value
-    //     }
-    // })
-    // return resp
-
-    return data.filter(item => item.status === 'fulfilled').map(item => item.value)
+// return await Promise.all(responses)
 
 
+// const data = await Promise.allSettled(responses)
+// const resp = data.filter(item => {
+//     if (item.status === 'fulfilled') {
+//         return item.value
+//     }
+// })
+// return resp
 
-}
+//     return data.filter(item => item.status === 'fulfilled').map(item => item.value)
 
-boo()
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+
+
+// }
+
+// boo()
+//     .then(data => console.log(data))
+//     .catch(err => console.log(err))
+
+
+
+
+// Налаштування HBS
+
+// 1. npm install --save-dev parcel-transformer-hbs
+
+// 2. В файлі .parcelrc добавити наступне
+// "transformers": {
+//     "*.hbs": [
+//       "parcel-transformer-hbs"
+//     ]
+//   }
